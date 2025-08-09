@@ -89,7 +89,7 @@ export default function DashboardPage() {
   // Get all unique tags from bookmarks
   const getAllTags = () => {
     const allTags = bookmarks.flatMap(bookmark => parseTags(bookmark.tags))
-    return [...new Set(allTags)].sort()
+    return Array.from(new Set(allTags)).sort()
   }
 
   const handleAddBookmark = async (e: React.FormEvent) => {
