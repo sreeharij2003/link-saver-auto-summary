@@ -48,10 +48,10 @@ export default function Home() {
         : 'bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100'
     }`}>
       {/* Navigation */}
-      <nav className={`relative border-b shadow-lg transition-all duration-300 ${
+      <nav className={`relative backdrop-blur-xl border-b shadow-lg transition-all duration-300 ${
         darkMode
-          ? 'bg-gray-900 bg-opacity-90 border-gray-700'
-          : 'bg-white bg-opacity-90 border-gray-200'
+          ? 'bg-gray-900/80 border-gray-700/30'
+          : 'bg-white/80 border-white/20'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
@@ -85,10 +85,10 @@ export default function Home() {
               {/* Dark Mode Toggle */}
               <button
                 onClick={() => setDarkMode(!darkMode)}
-                className={`p-2 border rounded-lg transition-all duration-200 ${
+                className={`p-2 backdrop-blur-sm border rounded-lg transition-all duration-200 ${
                   darkMode
-                    ? 'bg-gray-800 bg-opacity-80 border-gray-600 hover:bg-gray-700'
-                    : 'bg-white bg-opacity-80 border-gray-300 hover:bg-gray-50'
+                    ? 'bg-gray-800/70 border-gray-600 hover:bg-gray-700/70'
+                    : 'bg-white/60 border-white/30 hover:bg-white/80'
                 }`}
                 title={darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
               >
