@@ -141,10 +141,10 @@ export default function Home() {
             ? 'bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900'
             : 'bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50'
         }`}></div>
-        <div className={`absolute inset-0 ${
+        <div className={`absolute inset-0 opacity-20 ${
           darkMode
-            ? 'bg-[radial-gradient(circle_at_30%_20%,rgba(120,119,198,0.2),transparent_50%),radial-gradient(circle_at_80%_80%,rgba(255,119,198,0.2),transparent_50%)]'
-            : 'bg-[radial-gradient(circle_at_30%_20%,rgba(120,119,198,0.1),transparent_50%),radial-gradient(circle_at_80%_80%,rgba(255,119,198,0.1),transparent_50%)]'
+            ? 'bg-gradient-to-br from-blue-500 to-purple-500'
+            : 'bg-gradient-to-br from-blue-300 to-purple-300'
         }`}></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
@@ -685,7 +685,7 @@ export default function Home() {
 
       {/* CTA Section */}
       <section className="py-24 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.1),transparent_50%),radial-gradient(circle_at_80%_80%,rgba(255,255,255,0.1),transparent_50%)]"></div>
+        <div className="absolute inset-0 opacity-10 bg-gradient-to-br from-white to-blue-100"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
             Ready to Transform Your Bookmarking?
